@@ -1,3 +1,6 @@
+body{
+    background-color: snow;
+}
 #input-food-name{
     width: 400px;
     padding: 15px 20px;
@@ -16,7 +19,8 @@ p{
 }
 #container{
     width: 80%;
-    padding-top: 40px;  
+    padding-top: 40px;
+    padding-bottom: 60px;  
     margin: auto;
 }
 #food-container{
@@ -40,15 +44,20 @@ p{
     display: flex;
 }
 #img-div img{
-    padding: 30px;
+    margin: 30px;
     width: 500px;
     height: 400px;
+    border-radius: 10px;
 }
 #ingredient-div{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 3px;
+    padding: 0px 30px;
 }
 #ingredient-div ul li{
     list-style: none;
     padding: 3px;
+}
+.img-name-div a{
+    text-decoration: none;
+    color: rgb(68, 67, 67);
 }

@@ -18,9 +18,9 @@ const foodNames = foodData => {
             const ImgNameDiv = document.createElement('div');
             ImgNameDiv.className = 'img-name-div';
             ImgNameDiv.innerHTML =
-                `<img onclick = 'foodDetails(${food.idMeal})' src='${food.strMealThumb}'>
-            <p>${food.strMeal}</p>
-            `
+                `<a  onclick = 'foodDetails(${food.idMeal})' href='#food-details'><img src='${food.strMealThumb}'>
+                <p>${food.strMeal}</p></a>
+                `
             const foodIdArray = [];
             foodIdArray.push(food.idMeal);
             foodContainer.appendChild(ImgNameDiv);
@@ -38,7 +38,7 @@ const foodDetails = (id) => {
 
 //Function to show food details information
 const ingredientsList = (data) => {
-    const foodDetails = document.getElementById('food-details');
+       const foodDetails = document.getElementById('food-details');
     const meal = data.meals[0];
     foodDetails.innerHTML = `
     <div id='img-div'>
@@ -47,7 +47,7 @@ const ingredientsList = (data) => {
     <div id='ingredient-div'>
     <h1>${meal.strMeal}</h1>
     <h4>Ingredients</h4>
-    <ul>
+    <ul id=list-Ul>
     <li>${meal.strIngredient1 + " " + meal.strMeasure1}</li>
     <li>${meal.strIngredient2 + " " + meal.strMeasure2}</li>
     <li>${meal.strIngredient3 + " " + meal.strMeasure3}</li>
