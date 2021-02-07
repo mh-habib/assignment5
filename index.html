@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,27 @@
     <title>Hungry Monster</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    
-    
+    <!-- Main container -->
+    <div id="container">
+        <p>
+            <input id="input-food-name" type="text" placeholder="Search for meal">
+            <button onclick="searchByName()">Search</button>
+        </p>
+        <!-- Food details container work after clicking any food image -->
+        <div id="food-details">
+        </div>
+
+        <!-- After searching by any food name matched food list will show here -->
+        <div id="food-container">
+        </div>
+
+    </div>
+    <!-- Main container end -->
 
     <script src="meal-api.js"></script>
 </body>
+
 </html>
