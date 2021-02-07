@@ -1,5 +1,6 @@
 body{
     background-color: snow;
+    margin: 0px;
 }
 #input-food-name{
     width: 400px;
