@@ -13,6 +13,7 @@ const foodNames = foodData => {
         alert('No result found');
     } else {
         document.getElementById('food-container').innerHTML =null; //To clear the food-container before new search 
+        document.getElementById('food-details').innerHTML =null; //To clear the food-container before new search 
         const item = foodData.meals;
         item.forEach(food => {
             const foodContainer = document.getElementById('food-container');
