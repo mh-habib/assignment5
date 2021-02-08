@@ -12,6 +12,7 @@ const foodNames = foodData => {
     if (foodData.meals === null || inputFoodName.value === "") {
         alert('No result found');
     } else {
+        document.getElementById('food-container').innerHTML =null; //To clear the food-container before new search 
         const item = foodData.meals;
         item.forEach(food => {
             const foodContainer = document.getElementById('food-container');
@@ -38,7 +39,7 @@ const foodDetails = (id) => {
 
 //Function to show food details information
 const ingredientsList = (data) => {
-       const foodDetails = document.getElementById('food-details');
+    const foodDetails = document.getElementById('food-details');
     const meal = data.meals[0];
     foodDetails.innerHTML = `
     <div id='img-div'>
